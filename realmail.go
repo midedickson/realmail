@@ -1,8 +1,8 @@
 package realmail
 
-// Entry Point to
+// Entry Point to start the validation trip process
 func StartValidation(email, destination string) (*ValidationBus, error) {
-	err := validateValidationTypeContext(destination)
+	err := validateValidationDestinationContext(destination)
 	if err != nil {
 		return nil, err
 	}

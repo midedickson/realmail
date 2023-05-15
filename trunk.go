@@ -15,20 +15,20 @@ func isIncluded(slice []string, target string) bool {
 }
 
 // Returns slice of available validation destinations
-func availableValidationTypes() []string {
+func availableValidationDestination() []string {
 	return []string{regexDestination}
 }
 
 // Validates validation type by available values,
 // returns error if validation fails
-func validateValidationTypeContext(validationDestination string) error {
-	if isIncluded(availableValidationTypes(), validationDestination) {
+func validateValidationDestinationContext(validationDestination string) error {
+	if isIncluded(availableValidationDestination(), validationDestination) {
 		return nil
 	}
 
 	return fmt.Errorf(
 		"%s is invalid validation destination, use one of these: %s",
 		validationDestination,
-		availableValidationTypes(),
+		availableValidationDestination(),
 	)
 }
