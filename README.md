@@ -4,7 +4,7 @@ Realmail is a configurable 📨 email validator written in Golang.
 You can verify email via Regex, DNS, SMTP and even more, hopefully :-)
 Spend less on marketing, filter fake users by making sure emails are not only valid but real as well.
 
-> Please Note: Work is still in progress, not taking contributions for now. Thanks
+> Please Note: Work is still in progress, not taking pull requests for now. Please add any suggestions to "issues" section. Thanks.
 
 ## Table of Contents
 
